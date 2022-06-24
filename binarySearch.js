@@ -7,7 +7,7 @@ function binarySearch(list, item) {
 	let low = 0;
 	let high = list.length - 1;
 	while(low < high) {
-		let middle = Math.ceil((low + high) / 2);
+		let middle = Math.floor((low + high) / 2);
 		let guess = list[middle]
 		if(guess === item)
 			return middle;
